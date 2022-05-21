@@ -86,7 +86,7 @@
     </package>
     <package name="utils">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="email-validator.ts" path="/home/mori/clean-node-api/src/utils/email-validator.ts">
+      <file name="email-validator-adapter.ts" path="/home/mori/clean-node-api/src/utils/email-validator-adapter.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
