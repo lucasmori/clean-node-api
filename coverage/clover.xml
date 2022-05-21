@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653099887965" clover="3.2.0">
-  <project timestamp="1653099887965" name="All files">
-    <metrics statements="50" coveredstatements="44" conditionals="9" coveredconditionals="6" methods="14" coveredmethods="14" elements="73" coveredelements="64" complexity="0" loc="50" ncloc="50" packages="5" files="9" classes="9"/>
+<coverage generated="1653154307536" clover="3.2.0">
+  <project timestamp="1653154307536" name="All files">
+    <metrics statements="70" coveredstatements="60" conditionals="11" coveredconditionals="8" methods="20" coveredmethods="20" elements="101" coveredelements="88" complexity="0" loc="70" ncloc="70" packages="7" files="12" classes="12"/>
+    <package name="data.usecases.addAccount">
+      <metrics statements="12" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <file name="db-add-account-protocols.ts" path="/home/mori/clean-node-api/src/data/usecases/addAccount/db-add-account-protocols.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="db-add-account.ts" path="/home/mori/clean-node-api/src/data/usecases/addAccount/db-add-account.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.cryptography">
+      <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <file name="bcrypt-adapter.ts" path="/home/mori/clean-node-api/src/infra/cryptography/bcrypt-adapter.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="presentation.controllers.signup">
       <metrics statements="25" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="signup-protocols.ts" path="/home/mori/clean-node-api/src/presentation/controllers/signup/signup-protocols.ts">
@@ -85,13 +119,14 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="email-validator-adapter.ts" path="/home/mori/clean-node-api/src/utils/email-validator-adapter.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
   </project>
