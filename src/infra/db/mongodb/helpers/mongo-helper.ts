@@ -15,5 +15,8 @@ export const MongoHelper = {
   },
   getCollection (name: string): Collection {
     return this.client.db().collection(name)
+  },
+  merge (insertedId, data): any {
+    return Object.assign({}, data, { id: insertedId.toString() })
   }
 }
