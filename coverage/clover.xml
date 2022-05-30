@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653260049703" clover="3.2.0">
-  <project timestamp="1653260049703" name="All files">
-    <metrics statements="78" coveredstatements="78" conditionals="15" coveredconditionals="12" methods="26" coveredmethods="26" elements="119" coveredelements="116" complexity="0" loc="78" ncloc="78" packages="8" files="11" classes="11"/>
+<coverage generated="1653273948399" clover="3.2.0">
+  <project timestamp="1653273948400" name="All files">
+    <metrics statements="84" coveredstatements="84" conditionals="16" coveredconditionals="13" methods="28" coveredmethods="28" elements="128" coveredelements="125" complexity="0" loc="84" ncloc="84" packages="9" files="12" classes="12"/>
     <package name="data.usecases.addAccount">
       <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
       <file name="db-add-account.ts" path="/home/mori/clean-node-api/src/data/usecases/addAccount/db-add-account.ts">
@@ -46,23 +46,35 @@
       <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
       <file name="mongo-helper.ts" path="/home/mori/clean-node-api/src/infra/db/mongodb/helpers/mongo-helper.ts">
         <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="15" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="19" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="15" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="19" count="15" type="cond" truecount="1" falsecount="0"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="22" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="8" type="cond" truecount="1" falsecount="0"/>
         <line num="25" count="2" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
       </file>
     </package>
+    <package name="infra.db.mongodb.log-repository">
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="log.ts" path="/home/mori/clean-node-api/src/infra/db/mongodb/log-repository/log.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+      </file>
+    </package>
     <package name="presentation.controllers.signup">
-      <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="signup.ts" path="/home/mori/clean-node-api/src/presentation/controllers/signup/signup.ts">
-        <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="2" count="5" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
@@ -82,48 +94,48 @@
         <line num="30" count="5" type="stmt"/>
         <line num="35" count="4" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
       </file>
     </package>
     <package name="presentation.errors">
-      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="6"/>
+      <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="6"/>
       <file name="index.ts" path="/home/mori/clean-node-api/src/presentation/errors/index.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
       </file>
       <file name="invalid-param-error.ts" path="/home/mori/clean-node-api/src/presentation/errors/invalid-param-error.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
         <line num="3" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
       </file>
       <file name="missing-param-error.ts" path="/home/mori/clean-node-api/src/presentation/errors/missing-param-error.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
         <line num="3" count="8" type="cond" truecount="1" falsecount="1"/>
         <line num="4" count="8" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
       </file>
       <file name="server-error.ts" path="/home/mori/clean-node-api/src/presentation/errors/server-error.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="3" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
       </file>
     </package>
     <package name="presentation.helpers">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="http-helper.ts" path="/home/mori/clean-node-api/src/presentation/helpers/http-helper.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
       </file>
     </package>
     <package name="utils">
