@@ -4,7 +4,7 @@ import { AccountModel, AddAccountModel, AddAccountRepository, Encrypter } from '
 const makeEncrypter = (): Encrypter => {
   class EncrypterStub implements Encrypter {
     async encrypt (value: string): Promise<string> {
-      return await new Promise(resolve => resolve('encrypted_value'))
+      return new Promise(resolve => resolve('encrypted_value'))
     }
   }
   return new EncrypterStub()
@@ -13,7 +13,7 @@ const makeEncrypter = (): Encrypter => {
 const makeAddAccountRepository = (): AddAccountRepository => {
   class AddAccountRepositoryStub implements AddAccountRepository {
     async add (accountData: AddAccountModel): Promise<AccountModel> {
-      return await new Promise(resolve => resolve(makeFakeAccount()))
+      return new Promise(resolve => resolve(makeFakeAccount()))
     }
   }
   return new AddAccountRepositoryStub()

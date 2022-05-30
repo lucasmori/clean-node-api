@@ -6,7 +6,7 @@ import { HttpRequest, Authentication, Validation, AuthenticationModel } from './
 const makeAuthentication = (): Authentication => {
   class AuthenticationStub implements Authentication {
     async auth (authentication: AuthenticationModel): Promise<string> {
-      return await new Promise(resolve => resolve('any_token'))
+      return new Promise(resolve => resolve('any_token'))
     }
   }
   return new AuthenticationStub()
