@@ -52,9 +52,9 @@ const makeSut = (): SutTypes => {
 describe('DbAddAccount', () => {
   it('Should call Hasher with correct password', async () => {
     const { sut, hasherStub } = makeSut()
-    const encryptSpy = jest.spyOn(hasherStub, 'hash')
+    const hashtSpy = jest.spyOn(hasherStub, 'hash')
     await sut.add(makeFakeAccountData())
-    expect(encryptSpy).toHaveBeenCalledWith('valid_password')
+    expect(hashtSpy).toHaveBeenCalledWith('valid_password')
   })
   it('Should throw if Hasher throws', async () => {
     const { sut, hasherStub } = makeSut()
